@@ -10,6 +10,6 @@
 	echo $header;
 ?>
 <?php
-	//include "pages/$current_page.html";
+	include "pages/$current_page.html";
 ?>
 <?php include 'include/footer.html'; ?>
