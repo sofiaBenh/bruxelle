@@ -70,7 +70,7 @@
 												<div class="input-group input-large">
 													<input type="text" class="form-control date-picker" name="date" data-date-format="dd/mm/yyyy" id="mask_date">
 													<span class="input-group-addon"> à </span>
-													<input type="text" class="form-control timepicker timepicker-24" name="time" >
+													<input type="text" class="form-control timepicker timepicker-24" name="time" id="mask_time">
 													<span class="input-group-btn">
 														<button class="btn default" type="button">
 															<i class="fa fa-clock-o"></i>
@@ -86,7 +86,7 @@
 													<span class="required"> * </span>
 												</label>
 												<div class="col-md-4">
-													<select name="path" id="country_list" class="form-control">
+													<select name="path" id="country_list" class="form-control" >
 														<option value=""></option>
 														<option value="traje1">trajet1</option>
 														<option value="traje2">traje2</option>
@@ -99,7 +99,7 @@
 													<span class="required"> * </span>
 												</label>
 												<div class="col-md-4">
-													<textarea type="text" class="form-control" name="addressd"></textarea>
+													<textarea type="text" class="form-control" name="addressstarting"></textarea>
 												</div>
 											</div>
 											<div class="form-group">
@@ -107,7 +107,15 @@
 													<span class="required"> * </span>
 												</label>
 												<div class="col-md-4">
-													<textarea type="text" class="form-control" name="addressA"></textarea>
+													<textarea type="text" class="form-control" name="addressfinishing"></textarea>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Nombre des places
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="number" class="form-control" name="numberplaces" min="1" id="mask_number"></input>
 												</div>
 											</div>
 										</div>
@@ -128,7 +136,7 @@
 												<span class="required"> * </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="secondname" />
+												<input type="text" class="form-control" name="lastname" />
 												<span class="help-block"> merci d'entree votre prenom reel </span>
 											</div>
 										</div>
@@ -137,12 +145,13 @@
 												<span class="required"> * </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="phone" />
+												<input type="text" class="form-control" name="phone" id="mask_phone"/>
 												<span class="help-block"> merci d'entree votre numero correcte </span>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">Email
+												<span class="required"> * </span>
 											</label>
 											<div class="col-md-4">
 												<input type="text" class="form-control" name="email" />
@@ -152,7 +161,7 @@
 											<label class="control-label col-md-3">Adresse
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="adresse" />
+												<input type="text" class="form-control" name="address" />
 											</div>
 										</div>
 										<div class="form-group">
@@ -173,7 +182,7 @@
 												<span class="required"> * </span>
 											</label>
 											<div class="col-md-4">
-												<select name="type" id="country_list" class="form-control">
+												<select name="typepath" id="country_list" class="form-control">
 													<option value=""></option>
 													<option value="oui">Aller-retour</option>
 													<option value="non">Aller simple</option>
@@ -196,7 +205,7 @@
 											<label class="control-label col-md-3">Option supplementaire
 											</label>
 											<div class="col-md-4">
-												<select name="transport" id="country_list" class="form-control">
+												<select name="option" id="country_list" class="form-control">
 													<option value=""></option>
 													<option value="option1">option1</option>
 													<option value="opption2">option2</option>
@@ -210,7 +219,7 @@
 											<label class="control-label col-md-3">Commantaire
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="email" />
+												<input type="text" class="form-control" name="comment" />
 											</div>
 										</div>
 									</div>
